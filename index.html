@@ -13,8 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body id="home" class="scrollspy">
 
+    <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class="indigo darken-4">
             <div class="container">
@@ -48,15 +49,80 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
+<!-- Slider Section -->
+<section class="slider">
+        <ul class="slides">
+                <li>
+                  <img src="img/bled.jpeg"> 
+                  <div class="caption center-align">
+                    <h2>Take your dream holiday</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/italia.jpg"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h2>We work with all budgets</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/germany.jpeg"> <!-- random image -->
+                  <div class="caption right-align">
+                    <h2>Group & individial getaways</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                  </div>
+                </li>
+              </ul>
+</section>
+
+<!-- Search Section -->
+
+<section id="search" class="section-search indigo darken-3 white-text center scrollspy">
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h3>Search Destinations</h3>
+            <div class="input-field">
+                <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Spain, Greece, Germany, etc...">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
 
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script>
+
     // Sidenav
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {});
+
+    //  Slider 
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        internal: 6000
+    });
+
+
+
+
+
     </script>
+
+   
+    
+
 </body>
 
 </html>
