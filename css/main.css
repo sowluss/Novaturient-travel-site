@@ -2,4 +2,13 @@
     padding: 5px !important;
     font-size: 18px !important;
     width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+}
+
+.fab {
+    margin: 10px 20px;
+}
+
+ul.right li a:hover {
+    color: #AE956D;
 }
