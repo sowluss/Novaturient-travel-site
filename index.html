@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
     <title>Novaturient</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!--Optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +92,22 @@
 </div>
 </section>
 
+<!-- Icon Boxes section -->
 
+<section class="section section-incons grey lighten-4 center">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <i class="material-icons large indigo-text">room</i>
+                    <h4>Pick Where</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, expedita!</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>    
 
 
 
@@ -111,12 +127,22 @@
         indicators: false,
         height: 500,
         transition: 500,
-        internal: 6000
+        interval: 6000
     });
 
+// Autocomplete 
 
-
-
+const autoComplete = document.querySelector('.autocomplete');
+M.Autocomplete.init(autoComplete, {
+    data: {
+        "Germany": null, 
+        "Spain": null, 
+        "Italy": null, 
+        "France": null, 
+        "Greece": null, 
+        "Portugal": null, 
+    }
+});
 
     </script>
 
