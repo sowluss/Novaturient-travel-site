@@ -9,6 +9,22 @@
     margin: 10px 20px;
 }
 
+.fab:hover {
+    transform: scale(1.2);
+}
+
 ul.right li a:hover {
+    color: #AE956D;
+}
+
+.card-content {
+    text-align: justify !important;
+}
+
+.social-title {
+    color: #ffd600;
+}
+
+.btn:hover {
     color: #AE956D;
 }
